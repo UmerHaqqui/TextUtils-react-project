@@ -20,7 +20,7 @@ function App() {
       msg: message,
       type: type
     })
-    setTimeout(() => {
+    setTimeout(() => { 
       setAlert(null)
     }, 1500);
   }
@@ -43,6 +43,7 @@ function App() {
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <TextForm showAlert={showAlert} heading="Enter your text below to analyze" mode={mode}/>
+        {/* <About /> */}
         {/* <Routes> */}
           {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text below to analyze" mode={mode}/>} />
           <Route exact path="/about" element={<About />} />
